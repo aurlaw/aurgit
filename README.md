@@ -24,10 +24,15 @@ $ ./launch_aurgit
 
 
 
-### VM
+### VM Set up
 
 Includes base Ubuntu Precise 64-bit box via vagrant and VirtualBox
 
 Uses Shell provisioning
-*Go 1.3.1
-*Git
+- Go 1.3.1
+- Git
+
+
+```
+$ vagrant up
+```
