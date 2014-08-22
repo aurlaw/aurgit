@@ -1,19 +1,16 @@
 #!/bin/bash
 # get latest update for OS
-ensureLatest() {
+updatePackages() {
 
 	sudo apt-get update  # To get the latest package lists
+	sudo apt-get install git -y
     echo "...done"
 	return 1
 }
 
-installGit() {
-	sudo apt-get install git-core
+	# echo "git config --global user.name \"Michael Lawrence\"" >>~/.gitconfig
+	# echo "git config --global user.email mlawrence@aurlaw.com" >>~/.gitconfig
 
-	echo "git config --global user.name \"Michael Lawrence\"" >>~/.gitconfig
-	echo "git config --global user.email mlawrence@aurlaw.com" >>~/.gitconfig
-
-}
 
 installGoLang() {
 
@@ -43,10 +40,8 @@ installGoLang() {
 
 # Provision commands
 provision() {
-	
-   ensureLatest
 
-   installGit
+   updatePackages
 
    installGoLang
 
