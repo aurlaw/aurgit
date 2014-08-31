@@ -3,6 +3,7 @@ aurgit
 
 Go HTTP server for Git Post hook support
 
+Note: This is a work in progress!
 
 ## Installation
 
